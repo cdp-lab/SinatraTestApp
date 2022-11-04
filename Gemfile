@@ -3,7 +3,7 @@ source 'http://rubygems.org'
 gem 'sinatra'
 gem 'require_all'
 gem 'puma'
-gem 'bugsify'
+gem 'codepop'
 
 group :development do
   gem 'dotenv'

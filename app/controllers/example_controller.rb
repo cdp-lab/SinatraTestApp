@@ -1,7 +1,7 @@
 module Controllers
   class ExampleController < ApplicationController
     get '/' do
-      POPAC
+      CODEPOP
       "it's alive!".to_json
     end
   end

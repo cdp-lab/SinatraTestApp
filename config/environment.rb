@@ -13,11 +13,10 @@ if %w[development].include? ENV['SINATRA_ENV']
 end
 
 require 'sinatra'
-require 'bugsify'
+require 'codepop'
 
-Bugsify.configure do |config|
-  config.api_key = ENV['BUGSIFY_API_KEY']
-  config.api_secret = ENV['BUGSIFY_API_SECRET']
+Codepop.configure do |config|
+  config.api_key = ENV['CODEPOP_API_KEY']
 end
 
 require_all 'app/**/*.rb'
@@ -27,7 +26,7 @@ require 'debug'
 class App < Sinatra::Base
   configure do
     set :show_exceptions, true
-    use Bugsify::Middleware::Sinatra
+    use Codepop::Middleware::Sinatra
   end
 
   get('/') { Controllers::ExampleController.call(env) }

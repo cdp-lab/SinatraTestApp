@@ -2,7 +2,7 @@ GEM
   remote: http://rubygems.org/
   specs:
     awesome_print (1.9.2)
-    bugsify (0.2.4)
+    codepop (1.0.0)
     debug (1.6.2)
       irb (>= 1.3.6)
       reline (>= 0.3.1)
@@ -36,7 +36,7 @@ PLATFORMS
 
 DEPENDENCIES
   awesome_print
-  bugsify
+  codepop
   debug
   dotenv
   foreman
